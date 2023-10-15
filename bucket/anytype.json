@@ -1,0 +1,33 @@
+{
+    "version": "0.35.4",
+    "description": "Anytype is a local-first, P2P and open-source note-taking application",
+    "homepage": "https://anytype.io/",
+    "license": {
+        "identifier": "Any Source Available License 1.0",
+        "url": "https://github.com/anyproto/anytype-ts/blob/main/LICENSE.md"
+    },
+    "url": "https://github.com/anyproto/anytype-ts/releases/download/v0.35.4/Anytype.Setup.0.35.4.exe#/dl.7z",
+    "hash": "7b4acff0662420b38d20fc16c22c5715abcf47874cf39bbdf0b5ad1042ea2807",
+    "architecture": {
+        "64bit": {
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+        },
+        "32bit": {
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$R0\", \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "bin": "Anytype.exe",
+    "shortcuts": [
+        [
+            "Anytype.exe",
+            "Anytype"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/anyproto/anytype-ts"
+    },
+    "autoupdate": {
+        "url": "https://github.com/anyproto/anytype-ts/releases/download/v$version/Anytype.Setup.$version.exe#/dl.7z"
+    }
+}
