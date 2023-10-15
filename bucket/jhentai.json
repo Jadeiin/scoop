@@ -1,0 +1,27 @@
+{
+    "version": "7.4.3+142",
+    "description": "A cross-platform app made for e-hentai & exhentai by Flutter",
+    "homepage": "https://github.com/jiangtian616/JHenTai",
+    "license": "Apache-2.0",
+    "notes": [
+        "Config and data are stored in %USERPROFILE%\\AppData\\Roaming\\top.jtmonster\\jhentai",
+        "They will not be automatically removed during uninstallation even with -p flag. Delete them manually if needed."
+    ],
+    "url": "https://github.com/jiangtian616/JHenTai/releases/download/v7.4.3+142/JHenTai_7.4.3+142_Windows.zip",
+    "hash": "d0b595853ce19741ef53a2795ad172b6b66d29f07ff01c3b2b39856620bf0479",
+    "extract_dir": "JHenTai_7.4.3+142",
+    "shortcuts": [
+        [
+            "jhentai.exe",
+            "JHenTai"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/jiangtian616/JHenTai/releases/latest",
+        "regex": "/releases/tag/(?:v|V)?([\\d.+]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/jiangtian616/JHenTai/releases/download/v$version/JHenTai_$version_Windows.zip",
+        "extract_dir": "JHenTai_$version"
+    }
+}
