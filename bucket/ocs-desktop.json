@@ -18,8 +18,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/ocsjs/ocs-desktop/tags",
-        "jsonpath": "$.[0].name"
+        "url": "https://github.com/ocsjs/ocs-desktop/tags",
+        "regex": "/releases/tag/(?:v|V)?([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://cdn.ocsjs.com/app/download/ocs-$version-setup-win-x64.exe#/dl.7z"
