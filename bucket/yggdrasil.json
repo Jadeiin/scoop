@@ -28,9 +28,10 @@
         "if (!(Get-Content -Path \"$persist_dir\\yggdrasil.conf\")) {",
         "    yggdrasil.exe -genconf > \"$dir\\yggdrasil.conf\"",
         "}",
-        "New-Item \"$dir\\add-service.ps1\" -Value (",
-        "    \"sc.exe create 'Yggdrasil' binpath= \"\"$dir\\yggdrasil.exe -useconffile $dir\\yggdrasil.conf -logto $dir\\yggdrasil.log\"\" start= auto group= NetworkProvider displayname= 'Yggdrasil Service'\nsc.exe description 'Yggdrasil' 'Yggdrasil Network router process'\"",
-        ") | Out-Null",
+        "New-Item \"$dir\\add-service.ps1\" -Value @\"",
+        "sc.exe create 'Yggdrasil' binpath= \"$dir\\yggdrasil.exe -useconffile $dir\\yggdrasil.conf -logto $dir\\yggdrasil.log\" start= auto group= NetworkProvider displayname= 'Yggdrasil Service'",
+        "sc.exe description 'Yggdrasil' 'Yggdrasil Network router process'",
+        "\"@ | Out-Null",
         "New-Item \"$dir\\remove-service.ps1\" -Value \"sc.exe delete 'Yggdrasil'\" | Out-Null"
     ],
     "pre_uninstall": [
