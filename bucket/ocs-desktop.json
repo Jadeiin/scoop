@@ -19,7 +19,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/ocsjs/ocs-desktop/tags",
-        "jsonpath": "$..name"
+        "jsonpath": "$.[0].name"
     },
     "autoupdate": {
         "url": "https://cdn.ocsjs.com/app/download/ocs-$version-setup-win-x64.exe#/dl.7z"

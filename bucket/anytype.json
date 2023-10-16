@@ -1,7 +1,7 @@
 {
     "version": "0.35.4",
     "description": "Anytype is a local-first, P2P and open-source note-taking application",
-    "homepage": "https://anytype.io/",
+    "homepage": "https://anytype.io",
     "license": {
         "identifier": "Any Source Available License 1.0",
         "url": "https://github.com/anyproto/anytype-ts/blob/main/LICENSE.md"
