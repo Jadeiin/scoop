@@ -1,0 +1,38 @@
+{
+    "version": "0.3.5",
+    "description": "A TUI based Invidious client",
+    "homepage": "https://darkhz.github.io/invidtui/",
+    "license": "MIT",
+    "suggest": {
+        "MPV": "mpv",
+        "ffmpeg": "ffmpeg",
+        "yt-dlp": "yt-dlp"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/darkhz/invidtui/releases/download/v0.3.5/invidtui_0.3.5_Windows_x86_64.tar.gz",
+            "hash": "939214249010a4fd6f51ff750b4673e947846f002a18d8a8de911afa32fadcd8"
+        },
+        "32bit": {
+            "url": "https://github.com/darkhz/invidtui/releases/download/v0.3.5/invidtui_0.3.5_Windows_i386.tar.gz",
+            "hash": "2b73fcb9107cc40246fc36936ba065d058c0c2de13a42321c2954c903ca84b98"
+        }
+    },
+    "bin": "invidtui.exe",
+    "checkver": {
+        "github": "https://github.com/darkhz/invidtui"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/darkhz/invidtui/releases/download/v0.3.5/invidtui_0.3.5_Windows_x86_64.tar.gz"
+            },
+            "32bit": {
+                "url": "https://github.com/darkhz/invidtui/releases/download/v0.3.5/invidtui_0.3.5_Windows_i386.tar.gz"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}
