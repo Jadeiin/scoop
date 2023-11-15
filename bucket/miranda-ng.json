@@ -1,0 +1,50 @@
+{
+    "version": "0.96.3",
+    "description": "Miranda NG: Next Generation of Miranda IM",
+    "homepage": "https://www.miranda-ng.org",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.96.3_x64.7z",
+            "hash": "cdf143abc5b9d0c49856697c969ea00bb2402d2386ec8b02e5e9ae0a7252067a",
+            "shortcuts": [
+                [
+                    "Miranda64.exe",
+                    "Miranda NG"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.96.3.7z",
+            "hash": "c1e3ba19fbfec2a28f2c945ee2407503a3c1d48e8e93b62cd088c66e35473994",
+            "shortcuts": [
+                [
+                    "Miranda.exe",
+                    "Miranda NG"
+                ]
+            ]
+        }
+    },
+    "persist": [
+        "Icons",
+        "Languages",
+        "Profiles",
+        "Plugins",
+        "Plugin Updates",
+        "Skins"
+    ],
+    "checkver": {
+        "url": "https://miranda-ng.org/downloads/",
+        "regex": "Stable version<br />\\(([\\d.]+)\\)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v$version_x64.7z"
+            },
+            "32bit": {
+                "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v$version.7z"
+            }
+        }
+    }
+}
