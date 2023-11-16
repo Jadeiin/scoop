@@ -15,6 +15,20 @@
             "Xmacs.ico"
         ]
     ],
+    "post_install": [
+        "Write-Host 'Registering the TM FileType...'",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\.tm' -Value \"tmfile\" -Force | Out-Null",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile' -Value \"text/tm\" -Force | Out-Null",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile\\DefaultIcon' -Value \"$dir\\TeXmacs.ico\" -Force | Out-Null",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile\\shell\\open\\command' -Value \"\"\"$dir\\bin\\mogan.exe\"\" \"\"%1\"\"\" -Force | Out-Null",
+        "Write-Host 'Done!'"
+    ],
+    "pre_uninstall": [
+        "Write-Host 'Unregistering the TM FileType...'",
+        "Remove-Item 'HKCU:\\SOFTWARE\\Classes\\.tm' -Force -Recurse",
+        "Remove-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile' -Force -Recurse",
+        "Write-Host 'Done!'"
+    ],
     "env_set": {
         "TEXMACS_HOME_PATH": "$dir\\data"
     },
