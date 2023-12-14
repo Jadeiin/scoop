@@ -6,8 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/LykosAI/StabilityMatrix/releases/download/v2.7.0/StabilityMatrix-win-x64.zip",
-            "hash": "99dc298ffa464e9936707f5e89bd0674db29330db025e10f403364e0ccdfb17d",
-            "extract_dir": "StabilityMatrix-win-x64"
+            "hash": "99dc298ffa464e9936707f5e89bd0674db29330db025e10f403364e0ccdfb17d"
         }
     },
     "post_install": [
