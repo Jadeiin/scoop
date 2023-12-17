@@ -10,7 +10,7 @@
     "bin": [
         [
             "run.bat",
-            "youtube-local.bat"
+            "youtube-local"
         ]
     ],
     "shortcuts": [
