@@ -12,7 +12,7 @@
     "shortcuts": [
         [
             "蓝奏云盘.exe",
-            "lanzouyun-disk",
+            "蓝奏云盘",
             "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
