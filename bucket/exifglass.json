@@ -15,7 +15,13 @@
             "extract_dir": "ExifGlass_1.4.1.0_net8_x64"
         }
     },
-    "env_add_path": ".",
+    "bin": "ExifGlass.exe",
+    "shortcuts": [
+        [
+            "ExifGlass.exe",
+            "ExifGlass"
+        ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
