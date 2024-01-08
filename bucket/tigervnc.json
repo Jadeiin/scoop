@@ -1,0 +1,36 @@
+{
+    "version": "1.13.1",
+    "description": "High performance, multi-platform VNC client and server",
+    "homepage": "https://tigervnc.org",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.sourceforge.net/project/tigervnc/stable/1.13.1/tigervnc64-1.13.1.exe",
+            "hash": "sha1:c4d7e890dbb72790fc949048f85548cab6584f3f"
+        },
+        "32bit": {
+            "url": "https://downloads.sourceforge.net/project/tigervnc/stable/1.13.1/tigervnc-1.13.1.exe",
+            "hash": "sha1:b63ea202e564a0515776447bd0711c86ee896b46"
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "vncviewer.exe",
+            "TigerVNC Viewer"
+        ]
+    ],
+    "checkver": {
+        "sourceforge": "tigervnc"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.sourceforge.net/project/tigervnc/stable/$version/tigervnc64-$version.exe"
+            },
+            "32bit": {
+                "url": "https://downloads.sourceforge.net/project/tigervnc/stable/$version/tigervnc-$version.exe"
+            }
+        }
+    }
+}
