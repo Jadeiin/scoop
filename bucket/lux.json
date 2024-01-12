@@ -1,10 +1,10 @@
 {
-    "version": "0.13.0",
+    "version": "0.13.1",
     "description": "A light desktop tun proxy client powered by clash",
     "homepage": "https://igoogolx.github.io/lux-docs/docs/intro",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/igoogolx/lux/releases/download/v0.13.0/lux-0.13.0+0.13.0-windows-setup.exe",
-    "hash": "6f6d6593d5aaeaae37bcb4f858445cb5945f79fba98a0026e8378f27e869e289",
+    "url": "https://github.com/igoogolx/lux/releases/download/v0.13.1/lux-0.13.1+0.13.1-windows-setup.exe",
+    "hash": "a4bc9e850cd78be0daba652c9785492a00c9a3036123af71fdd3bf67ecb9b5ff",
     "innosetup": true,
     "shortcuts": [
         [
