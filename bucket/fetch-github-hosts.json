@@ -1,16 +1,16 @@
 {
-    "version": "2.7",
+    "version": "2.8",
     "description": "🌏 同步 github 的 hosts 工具，支持多平台的图形化和命令行，内置客户端和服务端两种模式~",
     "homepage": "https://hosts.gitcdn.top",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Licoy/fetch-github-hosts/releases/download/v2.7/fetch-github-hosts_v2.7_windows_amd64.zip",
-            "hash": "e47f4c46c84f7a6da432d2c38d31cff5fb2d57efa4713a045ebaf934d50c0b8d"
+            "url": "https://github.com/Licoy/fetch-github-hosts/releases/download/v2.8/fetch-github-hosts_v2.8_windows_amd64.zip",
+            "hash": "dd97eb6b6dd0668a30135ad363d0662561f3647054218e85589307df43d32122"
         },
         "32bit": {
-            "url": "https://github.com/Licoy/fetch-github-hosts/releases/download/v2.7/fetch-github-hosts_v2.7_windows_386.zip",
-            "hash": "4ae4511dafdd915376b67537b0e27cf0f2df261345cd8355201c1463af464b5d"
+            "url": "https://github.com/Licoy/fetch-github-hosts/releases/download/v2.8/fetch-github-hosts_v2.8_windows_386.zip",
+            "hash": "a137e13c14fc16c4a94c5b797b2f9174fab4bcb88dbe58507335d7e8585f928f"
         }
     },
     "pre_install": [
