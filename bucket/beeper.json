@@ -1,12 +1,12 @@
 {
-    "version": "3.94.20",
+    "version": "3.95.22",
     "description": "An universal chat application that unifies all your chat applications into one.",
     "homepage": "https://www.beeper.com",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://download.todesktop.com/2003241lzgn20jd/Beeper Setup 3.94.20 - Build 240202yjfv5ggow-x64.exe#/dl.7z",
-            "hash": "sha512:329be154297cb80ccae904d460357490b9175bb9a1df80f1617cbbac7cdc04bd7e9ca90ed817dc58d053ec84b50aa0b7195721d85af8d37dddf4f4f3ca87ae8f",
+            "url": "https://download.todesktop.com/2003241lzgn20jd/Beeper Setup 3.95.22 - Build 240206gs9w02ysg-x64.exe#/dl.7z",
+            "hash": "sha512:ebb1549f1f90b2defb715dc1b68088ad65a156bad507aede05d27e366427f50e7fd004469d1f09f6008b8087867360a675fe0ad3b081b741ddef0c5f82a7b71f",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
