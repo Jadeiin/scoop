@@ -6,14 +6,16 @@
         "identifier": "Any Source Available License 1.0",
         "url": "https://github.com/anyproto/anytype-ts/blob/main/LICENSE.md"
     },
-    "url": "https://github.com/anyproto/anytype-ts/releases/download/v0.38.0/Anytype.Setup.0.38.0.exe#/dl.7z",
-    "hash": "cd5f1fe25345cea1402ff890dfb7eac7811e083bd17b57e76f680438ff0c6575",
     "architecture": {
         "64bit": {
-            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+            "url": "https://github.com/anyproto/anytype-ts/releases/download/v0.38.0/Anytype.Setup.0.38.0.exe#/dl.7z",
+            "hash": "cd5f1fe25345cea1402ff890dfb7eac7811e083bd17b57e76f680438ff0c6575",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\" -Recurse"
+            ]
         }
     },
-    "post_install": "Remove-Item \"$dir\\`$R0\", \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
     "bin": "Anytype.exe",
     "shortcuts": [
         [
@@ -28,6 +30,10 @@
         "regex": "/releases/tag/v([\\d.]+(?!-alpha))\""
     },
     "autoupdate": {
-        "url": "https://github.com/anyproto/anytype-ts/releases/download/v$version/Anytype.Setup.$version.exe#/dl.7z"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/anyproto/anytype-ts/releases/download/v$version/Anytype.Setup.$version.exe#/dl.7z"
+            }
+        }
     }
 }
