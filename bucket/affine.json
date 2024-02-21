@@ -1,0 +1,39 @@
+{
+    "version": "0.11.3",
+    "description": "AFFiNE is a workspace with fully merged docs, whiteboards and databases.",
+    "homepage": "https://affine.pro/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/toeverything/AFFiNE/releases/download/v0.11.3/affine-stable-windows-x64.exe#/dl.7z",
+            "hash": "sha512:4ac161442f7cc4f9b74068a569f4cfda3dbad84918e18adb2d31e48f451c039e4b0f90d117e8e325cc6aa6f8c7e9426d9602113c5f9e29abd3d6e69254f64639",
+            "pre_install": [
+                "Remove-Item \"$dir\\*\" -Exclude 'AFFiNE-*-full.nupkg'",
+                "Expand-7zipArchive \"$dir\\AFFiNE-*-full.nupkg\" -ExtractDir 'lib\\net45' -Removal"
+            ]
+        }
+    },
+    "bin": "AFFiNE.exe",
+    "shortcuts": [
+        [
+            "AFFiNE.exe",
+            "AFFiNE",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "persist": "User Data",
+    "checkver": {
+        "github": "https://github.com/toeverything/AFFiNE"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/toeverything/AFFiNE/releases/download/v$version/affine-stable-windows-x64.exe#/dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "regex": "sha512:\\s+$base64"
+                }
+            }
+        }
+    }
+}
