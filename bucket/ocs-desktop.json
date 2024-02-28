@@ -1,20 +1,20 @@
 {
-    "version": "2.6.0",
+    "version": "2.6.3",
     "description": "OCS 浏览器自动化神器，一键浏览器多开，用户脚本环境一键配置。",
     "homepage": "https://docs.ocsjs.com/docs/app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ocsjs/ocs-desktop/releases/download/2.6.0/ocs-2.6.0-setup-win-x64.exe#/dl.7z",
-            "hash": "759d5be95c380b3f726f352c0c308b77eee73ff888991d42d6588def4489595d",
+            "url": "https://github.com/ocsjs/ocs-desktop/releases/download/2.6.3/ocs-2.6.3-setup-win-x64.exe#/dl.7z",
+            "hash": "387b5cd38ae5d4c069a52c4e7a443efdc869b9246047715e14942790c5262f2d",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/ocsjs/ocs-desktop/releases/download/2.6.0/ocs-2.6.0-setup-win-ia32.exe#/dl.7z",
-            "hash": "678305cd49fa43177088eb61e31521ba0c4a331aec6ab33bbe1d6c29bd818a7e",
+            "url": "https://github.com/ocsjs/ocs-desktop/releases/download/2.6.3/ocs-2.6.3-setup-win-ia32.exe#/dl.7z",
+            "hash": "26e1b0d26885ba1fe11014dfcd723b9863818570b1137df169b286ea07a2ff91",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
