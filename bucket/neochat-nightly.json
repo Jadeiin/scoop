@@ -1,0 +1,17 @@
+{
+    "version": "nightly",
+    "description": "A client for Matrix, the decentralized communication protocol",
+    "homepage": "https://apps.kde.org/neochat/",
+    "license": "GPL-3.0-or-later",
+    "url": "https://invent.kde.org/network/neochat/-/jobs/artifacts/master/download?job=craft_windows_qt6_x86_64#/dl.zip",
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\.kde-ci-packages\\neochat-master-*-windows-cl-msvc2022-x86_64.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\.*\" -Recurse"
+    ],
+    "shortcuts": [
+        [
+            "bin\\neochat.exe",
+            "NeoChat"
+        ]
+    ]
+}
