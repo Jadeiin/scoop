@@ -1,16 +1,16 @@
 {
-    "version": "1.16.8",
+    "version": "1.17.0",
     "description": "📱 使用图形化的 Scrcpy 显示和控制您的 Android 设备，由 Electron 驱动",
     "homepage": "https://github.com/viarotel-org/escrcpy",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.16.8/Escrcpy-1.16.8-win-setup-x64.exe#/dl.7z",
-            "hash": "sha512:fa5901997c2b994f7e69d94fc26637c1ac76682f5911d5a819cdb0bb73641e71fa5eca7c252c3b5fe68c09ff6833a641ffd6aa98eadc799b976590b3bae57adc"
+            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.17.0/Escrcpy-1.17.0-win-setup-x64.exe#/dl.7z",
+            "hash": "sha512:bba398fac4dccc7fb94640f2811b0012c2e1001ba8a71e2df4f8f012d5dc6dfe9a4bc5d0b9d1be651745d5c2055e7c93dfb7ad30c801d8a693a4c450a6e45b05"
         },
         "arm64": {
-            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.16.8/Escrcpy-1.16.8-win-setup-arm64.exe#/dl.7z",
-            "hash": "sha512:f40dea11d72a1a0b17176cf0f6658e8f661b4508456384a11bbc81dd3387457055e38256c6740d0b5cc1089827ccd4902ed6289237cb9fccfe941021ae38efb5"
+            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.17.0/Escrcpy-1.17.0-win-setup-arm64.exe#/dl.7z",
+            "hash": "sha512:ce395a98241e45253f036a7b43d6a07f0cc4cb26c114744db9b7d9aa6cc487d49bae010ab6fcb474533c9c5a5c942d32163803d9900bbefd4e3275fbefd45153"
         }
     },
     "pre_install": [
