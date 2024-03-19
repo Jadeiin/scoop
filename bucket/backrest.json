@@ -1,17 +1,17 @@
 {
-    "version": "0.15.0",
+    "version": "0.15.1",
     "description": "Backrest is a web UI and orchestrator for restic backup.",
     "homepage": "https://github.com/garethgeorge/backrest",
     "license": "GPL-3.0-or-later",
     "depends": "restic",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/garethgeorge/backrest/releases/download/v0.15.0/backrest_Windows_x86_64.zip",
-            "hash": "22e617e147b08e1351b41e837b29d78fc24226f3396ea723282650730a6dab5d"
+            "url": "https://github.com/garethgeorge/backrest/releases/download/v0.15.1/backrest_Windows_x86_64.zip",
+            "hash": "862ce3001f3d4d1aef178c49a92c7a867974b77d3db41994cd200035920d3aae"
         },
         "arm64": {
-            "url": "https://github.com/garethgeorge/backrest/releases/download/v0.15.0/backrest_Windows_arm64.zip",
-            "hash": "be49fe177f43f8412fa40484472e01d6394c15d85cd40db8f3a6a0427ec44480"
+            "url": "https://github.com/garethgeorge/backrest/releases/download/v0.15.1/backrest_Windows_arm64.zip",
+            "hash": "e4197f37d42d10ae0a17ac16e7a23e58424ffefbc897317f072f48cb335f0032"
         }
     },
     "bin": "backrest.exe",
