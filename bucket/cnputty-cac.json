@@ -29,7 +29,7 @@
     ],
     "checkver": {
         "github": "https://github.com/dZ8Lx9OwX/cnPuTTY-CAC",
-        "regex": "/releases/tag/cn([\\d.]+)"
+        "regex": "/releases/tag/cn([\\w.]+)"
     },
     "autoupdate": {
         "architecture": {
