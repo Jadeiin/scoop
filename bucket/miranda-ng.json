@@ -1,12 +1,12 @@
 {
-    "version": "0.96.4.1",
+    "version": "0.96.5",
     "description": "Miranda NG: Next Generation of Miranda IM",
     "homepage": "https://www.miranda-ng.org",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.96.4.1_x64.7z",
-            "hash": "13751a4167dd2b0be40d60f75333848b4641829ef6f23ef05371c7d45f92cab1",
+            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.96.5_x64.7z",
+            "hash": "9958c73f633903c9e3b0996cad03481d7745f5a4a5ddc9ac4fa6217d1c73278f",
             "shortcuts": [
                 [
                     "Miranda64.exe",
@@ -15,8 +15,8 @@
             ]
         },
         "32bit": {
-            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.96.4.1.7z",
-            "hash": "9225ca418ff827ea946985d9a0c0f4041fb2bc97931bc4977cc5ed761b6ccb1e",
+            "url": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.96.5.7z",
+            "hash": "83f296da44205e5c714f0d4049eae6e6c31c3aa35828d86d6b8944359270555b",
             "shortcuts": [
                 [
                     "Miranda.exe",
