@@ -1,18 +1,18 @@
 {
-    "version": "4.4.0",
+    "version": "4.4.1",
     "description": "go-musicfox是用Go写的又一款网易云音乐命令行客户端，支持UnblockNeteaseMusic、各种音质级别、lastfm、MPRIS...",
     "homepage": "https://github.com/go-musicfox/go-musicfox",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.0/go-musicfox_4.4.0_windows_amd64.zip",
-            "hash": "ab1d6a797b5ffabaefd003b5d62e2fdb17cb8dc9ba24073ffb09fb495f3ab7ff",
-            "extract_dir": "go-musicfox_4.4.0_windows_amd64"
+            "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.1/go-musicfox_4.4.1_windows_amd64.zip",
+            "hash": "ffa7068821533273de9e67caa0bc356e0ffb30af43295494b3884014665a7a62",
+            "extract_dir": "go-musicfox_4.4.1_windows_amd64"
         },
         "arm64": {
-            "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.0/go-musicfox_4.4.0_windows_arm64.zip",
-            "hash": "fd717299cca416299a4076ee3377f9f50a5797173bb413939202e1e5e64a1d13",
-            "extract_dir": "go-musicfox_4.4.0_windows_arm64"
+            "url": "https://github.com/go-musicfox/go-musicfox/releases/download/v4.4.1/go-musicfox_4.4.1_windows_arm64.zip",
+            "hash": "c0892288f31b5863296665449a330a43c79062216b44524ff188c6f4ddb9966f",
+            "extract_dir": "go-musicfox_4.4.1_windows_arm64"
         }
     },
     "bin": "musicfox.exe",
