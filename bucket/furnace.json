@@ -1,0 +1,38 @@
+{
+    "version": "0.6.3",
+    "description": "a multi-system chiptune tracker compatible with DefleMask modules",
+    "homepage": "https://github.com/tildearrow/furnace",
+    "license": "GPL-2.0-or-later",
+    "notes": [
+        "Config and data are stored in %USERPROFILE%\\AppData\\Roaming\\furnace",
+        "They will not be automatically removed during uninstallation even with -p flag. Delete them manually if needed."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tildearrow/furnace/releases/download/v0.6.3/furnace-0.6.3-win64.zip",
+            "hash": "4ceb14338a3084eebbf493a1bd0823292e69ba188cc9e54ff5424184532add23"
+        },
+        "32bit": {
+            "url": "https://github.com/tildearrow/furnace/releases/download/v0.6.3/furnace-0.6.3-win32.zip",
+            "hash": "70085db24dc496ed95ccf3ffa4369d5e2178228b1e6e9bf8e2eab8b04f1ce6bb"
+        }
+    },
+    "bin": "furnace.exe",
+    "shortcuts": [
+        [
+            "furnace.exe",
+            "Furnace"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tildearrow/furnace/releases/download/v$version/furnace-$version-win64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/tildearrow/furnace/releases/download/v$version/furnace-$version-win32.zip"
+            }
+        }
+    }
+}
