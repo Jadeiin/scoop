@@ -1,0 +1,24 @@
+{
+    "version": "2.0.11",
+    "description": "一款强大的微信聊天记录管理工具",
+    "homepage": "https://memotrace.cn/",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/LC044/WeChatMsg/releases/download/v2.0.11/MemoTrace-2.0.11.exe#/dl.7z",
+    "hash": "1ccbbfa5df3d367129e14c3f656e414a7d0d8923446aa37d17ae4e7cf5b84bd8",
+    "shortcuts": [
+        [
+            "MemoTrace.exe",
+            "MemoTrace"
+        ]
+    ],
+    "persist": [
+        "app",
+        "data"
+    ],
+    "checkver": {
+        "github": "https://github.com/LC044/WeChatMsg"
+    },
+    "autoupdate": {
+        "url": "https://github.com/LC044/WeChatMsg/releases/download/v$version/MemoTrace-$version.exe#/dl.7z"
+    }
+}
