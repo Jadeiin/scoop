@@ -1,12 +1,12 @@
 {
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "插件化、定制化、无广告的免费音乐播放器",
     "homepage": "http://musicfree.upup.fun/",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v0.0.4/MusicFree-0.0.4-windows-setup.exe",
-            "hash": "6e5a1ba0c63dc86044af05497742adf8b535f4852204ccf715540a9e320e20d8"
+            "url": "https://github.com/maotoumao/MusicFreeDesktop/releases/download/v0.0.5/MusicFree-0.0.5-win32-x64-setup.exe",
+            "hash": "b75a50000adce7fb1cd5c018b6758e1b8446e3caa940a838a075045dab48b725"
         }
     },
     "innosetup": true,
