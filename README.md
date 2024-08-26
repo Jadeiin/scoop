@@ -10,8 +10,8 @@ A Personal bucket for [Scoop](https://scoop.sh), the Windows command-line instal
 After manifests have been committed and pushed, run the following:
 
 ```pwsh
-scoop bucket add Jadeiin https://github.com/Jadeiin/scoop
-scoop install Jadeiin/<manifestname>
+scoop bucket add Jadeiin_scoop https://github.com/Jadeiin/scoop
+scoop install Jadeiin_scoop/<manifestname>
 ```
 
 ## How do I contribute new manifests?
