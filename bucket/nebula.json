@@ -13,10 +13,12 @@
             "hash": "599c49e2a1360eb448795e48b1afe9259bd79043d41e959f1e920d1a8238ef58"
         }
     },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\config.yml\")) { New-Item \"$dir\\config.yml\" -ItemType File | Out-Null }",
     "bin": [
         "nebula.exe",
         "nebula-cert.exe"
     ],
+    "persist": "config.yml",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
