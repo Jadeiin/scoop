@@ -2,7 +2,7 @@
     "version": "0.28.3",
     "description": "⛵ The immutable, decentralized, statically built p2p VPN without any central server and automatic discovery! Create decentralized introspectable tunnels over p2p with shared tokens",
     "homepage": "https://mudler.github.io/edgevpn",
-    "license": "MIT",
+    "license": "Apache-2.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/mudler/edgevpn/releases/download/v0.28.3/edgevpn-v0.28.3-Windows-x86_64.tar.gz",
