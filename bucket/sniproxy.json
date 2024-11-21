@@ -2,7 +2,7 @@
     "version": "1.0.4",
     "description": "🧷 自用的简单 SNIProxy（常用于网站负载均衡、基于域名 (SNI) 的端口转发等",
     "homepage": "https://github.com/XIU2/SNIProxy",
-    "license": "GPL-3.0-only",
+    "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://github.com/XIU2/SNIProxy/releases/download/v1.0.4/sniproxy_windows_amd64.zip",
