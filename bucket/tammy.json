@@ -1,12 +1,12 @@
 {
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Tammy is a fast Matrix client focusing on simplicity and extensibility.",
     "homepage": "https://tammy.connect2x.de/",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/api/v4/projects/61851918/packages/generic/Tammy-Windows-x64.zip/1.1.1/Tammy-Windows-x64-1.1.1.zip",
-            "hash": "a5a4feb1c3698ae2d28359137c7699a90a86d66c9b1be534c24c2a52587f265d",
+            "url": "https://gitlab.com/api/v4/projects/61851918/packages/generic/Tammy-Windows-x64.zip/1.1.2/Tammy-Windows-x64-1.1.2.zip",
+            "hash": "8cab334144f2381bb86433843c51b1e68bb28db012a58f497bec8d94315d401f",
             "extract_dir": "Tammy"
         }
     },
