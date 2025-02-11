@@ -1,0 +1,42 @@
+{
+    "version": "0.9.21",
+    "description": "🍒 Cherry Studio is a desktop client that supports for multiple LLM providers. Support deepseek-r1",
+    "homepage": "https://cherry-ai.com/",
+    "license": {
+        "identifier": "Cherry Studio 用户协议",
+        "url": "https://github.com/CherryHQ/cherry-studio/blob/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v0.9.21/Cherry-Studio-0.9.21-setup.exe#/dl.7z",
+            "hash": "sha512:a5ad83343a2dd79f7ffa40a545809c792f740a418afced011e26dd94da613f87d26ae5fff4de89e698b8f02ec097c023bb11e57819755e9ba58bf89911a531d8",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\" -Recurse"
+            ]
+        }
+    },
+    "bin": "Cherry Studio.exe",
+    "shortcuts": [
+        [
+            "Cherry Studio.exe",
+            "Cherry Studio",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "persist": "User Data",
+    "checkver": {
+        "github": "https://github.com/CherryHQ/cherry-studio"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-setup.exe#/dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "regex": "sha512: $base64"
+                }
+            }
+        }
+    }
+}
