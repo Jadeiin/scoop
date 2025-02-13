@@ -1,5 +1,5 @@
 {
-    "version": "0.9.21",
+    "version": "0.9.23",
     "description": "🍒 Cherry Studio is a desktop client that supports for multiple LLM providers. Support deepseek-r1",
     "homepage": "https://cherry-ai.com/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v0.9.21/Cherry-Studio-0.9.21-setup.exe#/dl.7z",
-            "hash": "sha512:a5ad83343a2dd79f7ffa40a545809c792f740a418afced011e26dd94da613f87d26ae5fff4de89e698b8f02ec097c023bb11e57819755e9ba58bf89911a531d8",
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v0.9.23/Cherry-Studio-0.9.23-setup.exe#/dl.7z",
+            "hash": "sha512:f67f6b68edacbeb623b9f6776569bd39c25b94a2d3d7c16e8e8bbc4edab125535b34c9d902f39cba03bedb79c32b8b7dbd5913002ebe16bf9c399b753bd25cad",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
