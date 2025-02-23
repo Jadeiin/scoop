@@ -75,7 +75,6 @@
         "Write-Host 'Done!'"
     ],
     "pre_uninstall": [
-        "if (!(Test-Path \"$dir\")) { return }",
         "Write-Host 'Removing file associations and protocol handler...'",
         "$fileTypes = @('.po', '.mo', '.gmo', '.pot', '.xlf', '.xliff', '.json', '.arb')",
         "$fileAssociations = @('Poedit.PO', 'Poedit.MO', 'Poedit.POT', 'Poedit.XLIFF', 'Poedit.JSON', 'Poedit.ARB')",
