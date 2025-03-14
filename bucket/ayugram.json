@@ -1,13 +1,13 @@
 {
-    "version": "5.11.1",
+    "version": "5.12.3",
     "description": "Desktop Telegram client with good customization and Ghost mode.",
     "homepage": "https://github.com/AyuGram/AyuGramDesktop",
     "license": {
         "identifier": "GPL-3.0-openssl-exception",
         "url": "https://github.com/AyuGram/AyuGramDesktop/blob/dev/LICENSE"
     },
-    "url": "https://github.com/AyuGram/AyuGramDesktop/releases/download/v5.11.1/AyuGram.zip",
-    "hash": "accce4124920f97db89cd41e24bfcd54069da965aa5ca8e798484425da1bcb48",
+    "url": "https://github.com/AyuGram/AyuGramDesktop/releases/download/v5.12.3/AyuGram.zip",
+    "hash": "8d51c136c24aab3d509d9618a4307677642c5a92540b95aea7aca7ab0d89cf4b",
     "pre_install": "if (Test-Path \"$persist_dir\\log.txt\") { Copy-Item \"$persist_dir\\log.txt\" \"$dir\\\" }",
     "pre_uninstall": "if (Test-Path \"$dir\\log.txt\") { Copy-Item \"$dir\\log.txt\" \"$persist_dir\\\" }",
     "bin": "AyuGram.exe",
