@@ -1,10 +1,10 @@
 {
-    "version": "13958171802",
+    "version": "13977963818",
     "description": "Browse the Fediverse",
     "homepage": "https://tuba.geopjr.dev/",
     "license": "GPL-3.0-or-later",
-    "url": "https://nightly.link/GeopJr/Tuba/actions/runs/13958171802/tuba_windows_portable.zip",
-    "hash": "4ad8c0763da75a3c0cb0aeb663af2c1a7289f2dc1208ab05691df10c9b468dcd",
+    "url": "https://nightly.link/GeopJr/Tuba/actions/runs/13977963818/tuba_windows_portable.zip",
+    "hash": "a4d65ba4245b0695d2614c7f40f9454f440cd5f222d68791bcf0601898ae1394",
     "shortcuts": [
         [
             "bin\\dev.geopjr.Tuba.exe",
