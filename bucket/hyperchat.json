@@ -1,12 +1,12 @@
 {
-    "version": "1.2.3",
+    "version": "1.2.10",
     "description": "HyperChat is a Chat client that strives for openness, utilizing APIs from various LLMs to achieve the best Chat experience, as well as implementing productivity tools through the MCP protocol.",
     "homepage": "https://github.com/BigSweetPotatoStudio/HyperChat",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BigSweetPotatoStudio/HyperChat/releases/download/v1.2.3/HyperChat-1.2.3-win-x64.exe#/dl.7z",
-            "hash": "5e7ba96c6306341a93af473e9c69e3c2d21df4063f15fa48e67547d59fa2a893",
+            "url": "https://github.com/BigSweetPotatoStudio/HyperChat/releases/download/v1.2.10/HyperChat-1.2.10-win-x64.exe#/dl.7z",
+            "hash": "sha512:d27cd7c61e8411270d38f247b873832c0f2cc33e9f8abc436f0533877ab77931125af89e806013c032fd4b3dc3107d69cc0558a01f36257f454d0d1c8fc7faca",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
