@@ -1,10 +1,10 @@
 {
-    "version": "0.2.8",
+    "version": "0.2.9",
     "description": "一款免费且便捷的公式识别软件~",
     "homepage": "https://simpletex.net/",
     "license": "Freeware",
-    "url": "https://gitee.com/simpletex/simple-tex-download/releases/download/0.2.8/SimpleTex%20Setup%200.2.8.exe#/dl.7z",
-    "hash": "2509f15447abd8113ca56b72c2c32e433cd090613e1abed7fcd4989ff7bb9924",
+    "url": "https://gitee.com/simpletex/simple-tex-download/releases/download/0.2.9/SimpleTex%20Setup%200.2.9.exe#/dl.7z",
+    "hash": "30a8e990a573347fbd80517c9e779e3cb0e49814fb485b3453c341c3db9c5215",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\Unins*\", \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
