@@ -1,16 +1,16 @@
 {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "description": "A little fast cloc(Count Lines Of Code)",
     "homepage": "https://github.com/hhatto/gocloc",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hhatto/gocloc/releases/download/v0.6.0/gocloc_Windows_x86_64.zip",
-            "hash": "e84d54c7e4a6c32509a20a2e4888a6a400b28cb44e8d97ba98ee5fc01769779c"
+            "url": "https://github.com/hhatto/gocloc/releases/download/v0.7.0/gocloc_Windows_x86_64.zip",
+            "hash": "16c1d8b29ad2d76d51074978a8d8646cefdce610587ca8705e344d980ec1d6e4"
         },
         "32bit": {
-            "url": "https://github.com/hhatto/gocloc/releases/download/v0.6.0/gocloc_Windows_i386.zip",
-            "hash": "b43bec37e27e7333105d742f2759dc27214ee9198f52f041a16f515e729b015d"
+            "url": "https://github.com/hhatto/gocloc/releases/download/v0.7.0/gocloc_Windows_i386.zip",
+            "hash": "7c2e4aed4b0f8a0c28c516c66ae10d87179dc3f7d5424f95e8a0061852a9c6ef"
         }
     },
     "bin": "gocloc.exe",
