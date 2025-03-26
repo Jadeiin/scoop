@@ -1,16 +1,16 @@
 {
-    "version": "2.0.0-nightly20250325",
+    "version": "2.0.0-nightly20250326",
     "description": "A scalable overlay networking tool with a focus on performance, simplicity and security",
     "homepage": "https://github.com/NebulaOSS/nebula-nightly",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NebulaOSS/nebula-nightly/releases/download/v2.0.0-nightly20250325/nebula-windows-amd64.zip",
-            "hash": "1026770ae67cea2250740f0fe9691ef9fb44d40546ab246d991eafe8efe05439"
+            "url": "https://github.com/NebulaOSS/nebula-nightly/releases/download/v2.0.0-nightly20250326/nebula-windows-amd64.zip",
+            "hash": "cb22f95a6dd1a301a4a1eb6d0b269b2fd372de23b742fc95891aa3e3b0b8c83e"
         },
         "arm64": {
-            "url": "https://github.com/NebulaOSS/nebula-nightly/releases/download/v2.0.0-nightly20250325/nebula-windows-arm64.zip",
-            "hash": "a70745b4d1dbe696eb63c425b3a63c7052f9224a95ca765497491b5b0af4bc1c"
+            "url": "https://github.com/NebulaOSS/nebula-nightly/releases/download/v2.0.0-nightly20250326/nebula-windows-arm64.zip",
+            "hash": "79571ecdd6cf31d0e8dfdac1041590bb8524c30f78a307a1f78000d699cf271c"
         }
     },
     "pre_install": "if (!(Test-Path \"$persist_dir\\config.yml\")) { New-Item \"$dir\\config.yml\" -ItemType File | Out-Null }",
