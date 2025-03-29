@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://gitlab.com/api/v4/projects/61851918/packages/generic/Tammy-Windows-x64.zip/1.1.9/Tammy-Windows-x64-1.1.9.zip",
-            "hash": "0c0e3a13cf94ddabff5e3759a2c76714e7357b911c6f7a38463ef668be696797",
+            "hash": "91e7f6dfd727db0c08f917ab4d2889e419988f0151b5d70e53b8a7483a18f5d0",
             "extract_dir": "Tammy"
         }
     },
