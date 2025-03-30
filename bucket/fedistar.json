@@ -1,5 +1,5 @@
 {
-    "version": "1.11.1",
+    "version": "1.11.2",
     "description": "Multi-column Mastodon, Pleroma, and Friendica client for desktop",
     "homepage": "https://fedistar.net",
     "license": "GPL-3.0-or-later",
@@ -10,8 +10,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/h3poteto/fedistar/releases/download/v1.11.1/fedistar_1.11.1_x64_en-US.msi",
-            "hash": "d2e84a4f4cdb4acb2fc4dac9dfb2a0cd5343a25805427fd967cf9b7ce67abe9c"
+            "url": "https://github.com/h3poteto/fedistar/releases/download/v1.11.2/fedistar_1.11.2_x64_en-US.msi",
+            "hash": "00fa82f0c23657805ce4ebf38a5e8a8fc86b64af596762b953d7b6fd64a68a63"
         }
     },
     "extract_dir": "PFiles\\fedistar",
