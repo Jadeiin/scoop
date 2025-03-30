@@ -1,0 +1,29 @@
+{
+    "version": "1.8.0",
+    "description": "A simple mdict dictionary with Android/Windows/Linux support",
+    "homepage": "https://github.com/mumu-lhl/Ciyue",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mumu-lhl/Ciyue/releases/download/v1.8.0/ciyue-windows.zip",
+            "hash": "6c84cde53af3cf1bb55b7605bf8e7b80129310d49a8b25b3f8f1076dbbbabca0"
+        }
+    },
+    "uninstaller": {
+        "script": "if ($purge) { Remove-Item \"$env:APPDATA\\Mumulhl\\ciyue\" -Force -Recurse }"
+    },
+    "shortcuts": [
+        [
+            "ciyue.exe",
+            "Ciyue"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mumu-lhl/Ciyue/releases/download/v$version/ciyue-windows.zip"
+            }
+        }
+    }
+}
