@@ -15,6 +15,7 @@
             "Supersonic"
         ]
     ],
+    "persist": "supersonic_portable",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
