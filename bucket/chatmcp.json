@@ -9,6 +9,9 @@
             "hash": "04a81562e9ded09026d7502164f4a18effecac6411804dbebc3c57ce8862c3ee"
         }
     },
+    "uninstaller": {
+        "script": "if ($purge) { Remove-Item \"$env:APPDATA\\com.example\\chatmcp\", \"$env:HOMEPATH\\Documents\\chatmcp.db\" -Force -Recurse }"
+    },
     "shortcuts": [
         [
             "chatmcp.exe",
