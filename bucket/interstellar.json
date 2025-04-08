@@ -1,12 +1,12 @@
 {
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "An app for Mbin and Lemmy, connecting you to the fediverse.",
     "homepage": "https://kbin.earth/m/interstellar",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jwr1/interstellar/releases/download/v0.9.0/interstellar-windows-x86_64.zip",
-            "hash": "cb2b2639d3f8c7be4014dbb0fdf99034fdaf91aba29140f06dd08df4f4b8ae6a"
+            "url": "https://github.com/jwr1/interstellar/releases/download/v0.9.1/interstellar-windows-x86_64.zip",
+            "hash": "8548612d1b2d82be62a3ff4f4b4b124b815109ecaa0757b820235f8449a80e9d"
         }
     },
     "uninstaller": {
