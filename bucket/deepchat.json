@@ -1,12 +1,12 @@
 {
-    "version": "0.0.13",
+    "version": "0.0.14",
     "description": "DeepChat - 连接强大AI与个人世界的智能助手 | DeepChat - A smart assistant that connects powerful AI to your personal world",
     "homepage": "https://deepchat.thinkinai.xyz/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ThinkInAIXYZ/deepchat/releases/download/v0.0.13/DeepChat-0.0.13-setup-windows-x64.exe#/dl.7z",
-            "hash": "fe382e00866766a1be50db2832e6f0a774e9af0689c200204fa4c4465f0bb157",
+            "url": "https://github.com/ThinkInAIXYZ/deepchat/releases/download/v0.0.14/DeepChat-0.0.14-setup-windows-x64.exe#/dl.7z",
+            "hash": "475fe64b4de662572f2c81a06725df0b363900e0d2b760548a28827f4b89fe5d",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
