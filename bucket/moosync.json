@@ -1,0 +1,36 @@
+{
+    "version": "11.0.2",
+    "description": "Moosync is a customizable desktop music player with a clean interface",
+    "homepage": "https://moosync.app",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Moosync/Moosync/releases/download/Moosync-v11.0.2/Moosync_11.0.2_x64-setup.exe#/dl.7z",
+            "hash": "3798b8f46332bef419695044d2a34166d5402fde4289961a265b82d44214a4d3",
+            "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall.exe\" -Recurse"
+        }
+    },
+    "uninstaller": {
+        "script": [
+            "Remove-Item \"$env:APPDATA\\app.moosync.moosync\" -Force -Recurse",
+            "Remove-Item \"$env:LOCALAPPDATA\\app.moosync.moosync\" -Force -Recurse"
+        ]
+    },
+    "shortcuts": [
+        [
+            "moosync.exe",
+            "Moosync"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Moosync/Moosync",
+        "regex": "/releases/tag/Moosync-v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Moosync/Moosync/releases/download/Moosync-v$version/Moosync_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}
