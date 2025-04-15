@@ -15,6 +15,14 @@
         }
     },
     "extract_dir": "PFiles\\Zerotier Toolkit",
+    "uninstaller": {
+        "script": [
+            "if ($purge) {",
+            "   Remove-Item \"$env:APPDATA\\com.cowjiang.zerotier.toolkit\" -Force -Recurse",
+            "   Remove-Item \"~\\.zerotier-toolkit\" -Force -Recurse",
+            "}"
+        ]
+    },
     "shortcuts": [
         [
             "ZeroTier Toolkit.exe",

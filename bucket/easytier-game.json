@@ -14,6 +14,14 @@
             "hash": "bec2a8aca326d321c7920a974b49b6a1ab4099b32c4cd8684beb959c8c668fdd"
         }
     },
+    "uninstaller": {
+        "script": [
+            "if ($purge) {",
+            "   Remove-Item \"$env:APPDATA\\com.tauri.easytier-game\" -Force -Recurse",
+            "   Remove-Item \"$env:LOCALAPPDATA\\com.tauri.easytier-game\" -Force -Recurse",
+            "}"
+        ]
+    },
     "shortcuts": [
         [
             "easytier-game.exe",
