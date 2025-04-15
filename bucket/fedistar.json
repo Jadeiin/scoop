@@ -15,6 +15,15 @@
         }
     },
     "extract_dir": "PFiles\\fedistar",
+    "uninstaller": {
+        "script": [
+            "if ($purge) {",
+            "   Remove-Item \"$env:APPDATA\\fedistar\" -Force -Recurse",
+            "   Remove-Item \"$env:APPDATA\\net.fedistar\" -Force -Recurse",
+            "   Remove-Item \"$env:LOCALAPPDATA\\net.fedistar\" -Force -Recurse",
+            "}"
+        ]
+    },
     "shortcuts": [
         [
             "fedistar.exe",
