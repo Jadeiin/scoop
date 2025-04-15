@@ -14,7 +14,7 @@
         }
     },
     "uninstaller": {
-        "script": "Remove-Item \"$env:APPDATA\\OpenCubicPlayer\" -Recurse -Force"
+        "script": "if ($purge) { Remove-Item \"$env:APPDATA\\OpenCubicPlayer\" -Recurse -Force }"
     },
     "bin": "ocp.exe",
     "shortcuts": [

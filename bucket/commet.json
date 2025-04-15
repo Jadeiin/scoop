@@ -7,7 +7,7 @@
     "hash": "125a82142cb1d64179ecbf47b514c7c48e5ad9842f9e69e577d72394af8783d2",
     "extract_dir": "Release",
     "uninstaller": {
-        "script": "Remove-Item \"$env:APPDATA\\commet.chat\\commet\" -Force -Recurse"
+        "script": "if ($purge) { Remove-Item \"$env:APPDATA\\commet.chat\\commet\" -Force -Recurse }"
     },
     "shortcuts": [
         [

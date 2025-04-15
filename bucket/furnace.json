@@ -14,7 +14,7 @@
         }
     },
     "uninstaller": {
-        "script": "Remove-Item \"$env:APPDATA\\furnace\" -Recurse -Force"
+        "script": "if ($purge) { Remove-Item \"$env:APPDATA\\furnace\" -Recurse -Force }"
     },
     "bin": "furnace.exe",
     "shortcuts": [

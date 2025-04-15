@@ -7,7 +7,7 @@
     "hash": "8ddca1d525fcb04d2fd32fb00c4dcaaa2b1188e3dec9f47a1b53617c2a8b18ba",
     "extract_dir": "JHenTai_8.0.6+277",
     "uninstaller": {
-        "script": "Remove-Item \"$env:APPDATA\\top.jtmonster\\jhentai\" -Recurse -Force"
+        "script": "if ($purge) { Remove-Item \"$env:APPDATA\\top.jtmonster\\jhentai\" -Recurse -Force }"
     },
     "shortcuts": [
         [
