@@ -1,16 +1,16 @@
 {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Nomad Pack is a templating and packaging tool used with HashiCorp Nomad.",
     "homepage": "https://github.com/hashicorp/nomad-pack",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://releases.hashicorp.com/nomad-pack/0.2.0/nomad-pack_0.2.0_windows_amd64.zip",
-            "hash": "a8645343b2afe80dc4135cfa156155599efb913f55a8e05abdfad324d29fdd4f"
+            "url": "https://releases.hashicorp.com/nomad-pack/0.3.0/nomad-pack_0.3.0_windows_amd64.zip",
+            "hash": "5222d7aedcd46149832514984d6bc38536cc7399597a03ab6d4f1b18bad552f0"
         },
         "arm64": {
-            "url": "https://releases.hashicorp.com/nomad-pack/0.2.0/nomad-pack_0.2.0_windows_arm64.zip",
-            "hash": "649a1b9d092143fb781f26e4e4a79d3258d8fb8639943435ea41ba39c934db12"
+            "url": "https://releases.hashicorp.com/nomad-pack/0.3.0/nomad-pack_0.3.0_windows_arm64.zip",
+            "hash": "72cfd7bf5c61125ede354e4f8997df6f8eac0499fff3cc365b966bd735a9b50b"
         }
     },
     "bin": "nomad-pack.exe",
