@@ -1,5 +1,6 @@
 {
     "version": "10.3.2",
+    "description": "Moosync is a customizable desktop music player with a clean interface",
     "homepage": "https://moosync.app",
     "license": "GPL-3.0-or-later",
     "architecture": {
