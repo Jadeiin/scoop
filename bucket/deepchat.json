@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ThinkInAIXYZ/deepchat/releases/download/v$version/DeepChat-$version-setup-windows-x64.exe#/dl.7z"
+                "url": "https://github.com/ThinkInAIXYZ/deepchat/releases/download/v$version/DeepChat-$version-windows-x64.exe#/dl.7z"
             }
         }
     }
