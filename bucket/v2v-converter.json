@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.starwindsoftware.com/starwind-v2v-converter",
     "description": "StarWind V2V Converter / P2V Migrator is a free software for cloning and transforming VMs from one format to another, as well as converting physical machines into virtual ones.",
-    "version": "9.0.626",
+    "version": "9.0.755",
     "license": "Freeware",
     "url": "https://www.starwindsoftware.com/tmplink/starwindconverter.exe",
-    "hash": "8d2d9f009d55144a359f73ae5424a2cd2a0197e1732ef6fc6e6d706c69bf18ad",
+    "hash": "1907fa0616dde2bd4808905bd8eeabc46cbeab59112eff4867cbd30b8e497926",
     "innosetup": true,
     "shortcuts": [
         [
