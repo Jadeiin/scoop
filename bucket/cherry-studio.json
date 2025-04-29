@@ -9,9 +9,17 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.2.10/Cherry-Studio-1.2.10-x64-setup.exe#/dl.7z",
-            "hash": "sha512:7387d2d19833abc5aba6264c16ed1c6f03d8e65b1805963cbf5be5d8d97beb118f0c1ee94dc86afb939fee368b39c18bd26a58637cd7aa897b875aa9a2e34637",
+            "hash": "sha512:451aa157a337eb54296af7be9638d65d9cb00bca530ba1beac85227615fd823bf418fbb01b5e930d1a5b4725b5488a234b5308edd3760c903976f66bad648cda",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\" -Recurse"
+            ]
+        },
+        "arm64": {
+            "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v1.2.10/Cherry-Studio-1.2.10-arm64-setup.exe#/dl.7z",
+            "hash": "sha512:248ac5141f26f5a978c9d0fb478514e566910f463b11a957e3c69e69682e284bbe0243ae1585e7c737965dae622dda457839c9a521f1a4ca754d9ee7cfd3d4c6",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
             ]
         }
@@ -30,12 +38,15 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-x64-setup.exe#/dl.7z",
-                "hash": {
-                    "url": "$baseurl/latest.yml",
-                    "regex": "sha512: $base64"
-                }
+                "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-x64-setup.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://github.com/CherryHQ/cherry-studio/releases/download/v$version/Cherry-Studio-$version-arm64-setup.exe#/dl.7z"
             }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "$basename\\s+sha512:\\s+$base64"
         }
     }
 }
