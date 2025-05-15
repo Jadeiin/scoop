@@ -1,20 +1,20 @@
 {
-    "version": "0.4.7",
+    "version": "0.5.0",
     "description": "reader is for your command line what the “readability” view is for modern browsers: A lightweight tool offering better readability of web pages on the CLI.",
     "homepage": "https://github.com/mrusme/reader",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mrusme/reader/releases/download/v0.4.7/reader_0.4.7_windows_amd64.tar.gz",
-            "hash": "b969a23313ba039e4cb42c45ddbd82d5c8589ceb044cc70ee3af7c353ac832b2"
+            "url": "https://github.com/mrusme/reader/releases/download/v0.5.0/reader_0.5.0_windows_amd64.tar.gz",
+            "hash": "99e5a462b7d5558923eb5082e5ddecd344fee716069480ff5de49079c1f7da6c"
         },
         "32bit": {
-            "url": "https://github.com/mrusme/reader/releases/download/v0.4.7/reader_0.4.7_windows_386.tar.gz",
-            "hash": "1e8a4f67ff4f6effdc011458b6845fd98b6300955351cf3a3cfe4d503cde6234"
+            "url": "https://github.com/mrusme/reader/releases/download/v0.5.0/reader_0.5.0_windows_386.tar.gz",
+            "hash": "5c898107a1f3633dd8327028bbdd43c4a09f3c9f0f6f505c4c1eb44e43d851cd"
         },
         "arm64": {
-            "url": "https://github.com/mrusme/reader/releases/download/v0.4.7/reader_0.4.7_windows_arm64.tar.gz",
-            "hash": "c2d8c93d4d3096d4b45588e12d7c8a77e72232161a6e0335306e0675882facc9"
+            "url": "https://github.com/mrusme/reader/releases/download/v0.5.0/reader_0.5.0_windows_arm64.tar.gz",
+            "hash": "f1bffdaa52b1970a47c10706b64be9a6408cdebfa4e338e77012a239c827dd1c"
         }
     },
     "bin": "reader.exe",
