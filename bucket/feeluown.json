@@ -1,5 +1,5 @@
 {
-    "version": "4.1.12",
+    "version": "4.1.13",
     "description": "trying to be a robust, user-friendly and hackable music player",
     "homepage": "https://feeluown.readthedocs.io",
     "license": "GPL-3.0-or-later",
@@ -7,8 +7,8 @@
         "Config and data are stored in %HOMEPATH%\\.FeelUOwn",
         "They will not be automatically removed during uninstallation even with -p flag. Delete them manually if needed."
     ],
-    "url": "https://github.com/feeluown/FeelUOwn/releases/download/v4.1.12/FeelUOwn-windows.zip",
-    "hash": "761fa22ef6d5ab3434bb16f5a8c0be7fbe1eed69353b00d7fd6dab56975bb520",
+    "url": "https://github.com/feeluown/FeelUOwn/releases/download/v4.1.13/FeelUOwn-windows.zip",
+    "hash": "4ad11c8af2ac8a9e8534f22932d7b6b371779f6b2c5c00f90bd90d874a8bcf8e",
     "extract_dir": "FeelUOwn",
     "bin": [
         [
