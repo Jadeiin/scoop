@@ -1,12 +1,12 @@
 {
-    "version": "0.23.1",
+    "version": "0.23.2",
     "description": "AFFiNE is a workspace with fully merged docs, whiteboards and databases.",
     "homepage": "https://affine.pro/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/toeverything/AFFiNE/releases/download/v0.23.1/affine-stable-windows-x64.exe#/dl.7z",
-            "hash": "sha512:2ff4483e9fdbd5c8c931ab7a103c0a6e9d206bbeab0a19ddad460ccff1d07c59eb31060fa364ba5946445a25f392e3d124f0ea2f06c963dc6aa2f681f05bc095",
+            "url": "https://github.com/toeverything/AFFiNE/releases/download/v0.23.2/affine-stable-windows-x64.exe#/dl.7z",
+            "hash": "sha512:8093529c589198664d8e725b9696cbe9f8bcbb95d402992523ef3f6d829434e2fb35117e2f06daad56ca977810e9ed5028b43555c4837321ad8c9e854a49e99b",
             "pre_install": [
                 "Remove-Item \"$dir\\*\" -Exclude 'AFFiNE-*-full.nupkg'",
                 "Expand-7zipArchive \"$dir\\AFFiNE-*-full.nupkg\" -ExtractDir 'lib\\net45' -Removal"
