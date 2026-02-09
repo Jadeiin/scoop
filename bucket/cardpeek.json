@@ -1,0 +1,43 @@
+{
+    "version": "0.8.4",
+    "description": "Cardpeek is a Linux/Windows/Mac OS X tool to read the contents of ISO7816 smart cards.",
+    "homepage": "http://pannetrat.com/Cardpeek/",
+    "license": "GPL-3.0-or-later",
+    "url": "http://downloads.pannetrat.com/install/cardpeek-0.8.4-win32-setup.exe",
+    "hash": "7cde1f6159d85674013ffc86e89d9bd1c0d996e154438cbe0ccdea0a040c33bb",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "cardpeek.exe",
+            "Cardpeek"
+        ]
+    ],
+    "post_install": [  # need extra lua scripts in installer
+        "if (Test-Path ~\\.cardpeek) {",
+        "   if ($null -eq (Get-Item ~\\.cardpeek).LinkType) {",
+        "       Rename-Item -Path ~\\.cardpeek -NewName ~\\.cardpeek.old -Force",
+        "   } else {",
+        "       Remove-Item -Path ~\\.cardpeek -Force",
+        "   }",
+        "}",
+        "New-Item -Path ~/.cardpeek -Target \"$dir\\data\" -ItemType Junction | Out-Null"
+    ],
+    "uninstaller": {
+        "script": [
+            "if ((Test-Path ~\\.cardpeek) -and ($null -ne (Get-Item ~\\.cardpeek).LinkType)) {",
+            "   Remove-Item -Path ~\\.cardpeek -Force",
+            "}",
+            "if (Test-Path ~\\.cardpeek.old) {",
+            "   Rename-Item -Path ~\\.cardpeek.old -NewName .cardpeek -Force",
+            "}"
+        ]
+    },
+    "persist": "data",
+    "checkver": {
+        "url": "http://pannetrat.com/Cardpeek/Install/",
+        "regex": "cardpeek-([\\d.]+)-win32-setup.exe"
+    },
+    "autoupdate": {
+        "url": "http://downloads.pannetrat.com/install/cardpeek-$version-win32-setup.exe"
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "version": "R2023b",
+    "description": "Webots Robot Simulator",
+    "homepage": "https://cyberbotics.com/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cyberbotics/webots/releases/download/R2023b/webots-R2023b_setup.exe",
+            "hash": "2bf0d07ada66b7d9c5763fb6e986401edd0cd51925bc8c85e6c61464523c2ad7"
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "msys64\\mingw64\\bin\\webotsw.exe",
+            "Webots"
+        ]
+    ],
+    "pre_install": [
+        #link to C:\Users\19834\AppData\Local\Cyberbotics\Webots\cache
+    ]
+    "post_install": [
+        "Write-Host 'Registering the WBT FileType...'",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\.wbt' -Value \"webotsfile\" -Force | Out-Null",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\webotsfile' -Value \"application/webotsfile\" -Force | Out-Null",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\webotsfile\\DefaultIcon' -Value \"$dir\\resources\\icons\\core\\webots_doc.ico\" -Force | Out-Null",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\webotsfile\\shell\\open\\command' -Value \"\"\"$dir\\msys64\\mingw64\\bin\\webotsw.exe\"\" \"\"%1\"\"\" -Force | Out-Null",
+        "Write-Host 'Done!'"
+    ],
+    "pre_uninstall": [
+        "Write-Host 'Unregistering the WBT FileType...'",
+        "Remove-Item 'HKCU:\\SOFTWARE\\Classes\\.wbt' -Force -Recurse",
+        "Remove-Item 'HKCU:\\SOFTWARE\\Classes\\webotsfile' -Force -Recurse",
+        "Write-Host 'Done!'"
+    ],
+    "uninstaller": {
+        "script": [
+            "if ($purge) { Remove-Item \"HKCU:\\SOFTWARE\\Cyberbotics\" -ErrorAction 'SilentlyContinue' -Force -Recurse }"
+        ]
+    },
+    "env_set": {
+        "WEBOTS_HOME": "$dir"
+    },
+    "persist": "cache",
+    "checkver": {
+        "url": "https://github.com/cyberbotics/webots/releases/latest",
+        "regex": "webots/releases/tag/(.+?)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cyberbotics/webots/releases/download/$version/webots-$version_setup.exe"
+            }
+        }
+    }
+}

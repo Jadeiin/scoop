@@ -1,0 +1,21 @@
+{
+    "version": "0.4.3.3-chs-alpha2.1.2",
+    "description": "Degrees of Lewdity 游戏的授权中文社区本地化版本",
+    "homepage": "https://eltirosto.github.io/Degrees-of-Lewdity-Chinese-Localization/",
+    "license": "CC-BY-NC-SA-4.0",
+    "url": "https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization/releases/download/v0.4.3.3-chs-alpha2.1.2/dol-0.4.3.3-chs-alpha2.1.2.zip",
+    "hash": "295d6d5c0ed8acbdfafc3a31129aeb22163a7880a7e60dc369baf1fd947a31d4",
+    "shortcuts": [
+        [
+            "Degrees of Lewdity.html",
+            "Degrees of Lewdity 汉化"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization/releases.atom",
+        "regex": "/releases/tag/v(.+?)\""
+    },
+    "autoupdate": {
+        "url": "https://github.com/Eltirosto/Degrees-of-Lewdity-Chinese-Localization/releases/download/v$version/dol-$version.zip"
+    }
+}

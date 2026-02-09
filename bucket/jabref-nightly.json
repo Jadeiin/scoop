@@ -1,0 +1,15 @@
+{
+    "version": "nightly",
+    "description": "Citation and reference management software that uses BibTeX and BibLaTeX as its native formats",
+    "homepage": "https://www.jabref.org",
+    "license": "MIT",
+    "url": "https://builds.jabref.org/main/JabRef-portable_windows.zip",
+    "extract_dir": "JabRef",
+    "bin": "runtime\\bin\\JabRef.bat",
+    "shortcuts": [
+        [
+            "JabRef.exe",
+            "JabRef"
+        ]
+    ]
+}

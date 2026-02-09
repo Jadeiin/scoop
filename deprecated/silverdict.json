@@ -1,0 +1,16 @@
+{
+    "version": "0.12.2",
+    "description": "Web-Based Alternative to GoldenDict",
+    "homepage": "https://crissium.github.io/SilverDict/",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/Crissium/SilverDict/releases/download/v0.12.2/SilverDict-windows.zip",
+    "hash": "2a9e59f4e76d20e30201fc5367e75a7b6d8c3d8bb59747070969a776f49714ef",
+    "extract_dir": "SilverDict",
+    "persist": "source",
+    "checkver": {
+        "github": "https://github.com/Crissium/SilverDict"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Crissium/SilverDict/releases/download/v$version/SilverDict-windows.zip"
+    }
+}

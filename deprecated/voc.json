@@ -1,0 +1,29 @@
+{
+    "version": "102.5",
+    "description": "Visions of Chaos is a professional high end software application for Windows.",
+    "homepage": "https://softology.pro/voc.htm",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://softology.pro/vocsetup.exe",
+            "hash": "286820ff31f395b07fe599f21b201ba3e0475bd2807f5463b9755a9c3d5c2c8e"
+        }
+    },
+    "innosetup": true, // can't extract other data
+    "shortcuts": [
+        [
+            "chaos.exe",
+            "Visions of Chaos"
+        ]
+    ],
+    "checkver": {
+        "regex": "Version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://softology.pro/vocsetup.exe"
+            }
+        }
+    }
+}

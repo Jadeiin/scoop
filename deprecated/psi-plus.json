@@ -1,0 +1,37 @@
+{
+    "version": "1.5.1653.0",
+    "description": "Psi+ is a development branch of Psi IM XMPP client.",
+    "homepage": "https://psi-plus.com",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.sourceforge.net/project/psiplus/Windows/Personal-Builds/KukuRuzo/psi-plus-1.5.1653.0-x64-setup.exe",
+            "hash": "sha1:12635edbd30150ed77f1ad17082ca452d25bab65"
+        },
+        "32bit": {
+            "url": "https://downloads.sourceforge.net/project/psiplus/Windows/Personal-Builds/KukuRuzo/psi-plus-1.5.1653.0-x86-setup.exe",
+            "hash": "sha1:ba8b2ad99e481641a8347dd87138491c565e69ef"
+        }
+    },
+    "innosetup": true,
+    "bin": "psi-plus.exe",  //! bin64 ,1.exe; bin64w ,2.exe
+    "shortcuts": [
+        [
+            "psi-plus.exe",
+            "Psi+"
+        ]
+    ],
+    "checkver": {
+        "sourceforge": "psiplus"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.sourceforge.net/project/psiplus/Windows/Personal-Builds/KukuRuzo/psi-plus-$version-x64-setup.exe"
+            },
+            "32bit": {
+                "url": "https://downloads.sourceforge.net/project/psiplus/Windows/Personal-Builds/KukuRuzo/psi-plus-$version-x86-setup.exe"
+            }
+        }
+    }
+}

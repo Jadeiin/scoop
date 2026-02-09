@@ -1,0 +1,34 @@
+{
+    "version": "1.13.0",
+    "description": "Android adb desktop app",
+    "homepage": "https://aya.liriliri.io/",
+    "license": "AGPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/liriliri/aya/releases/download/v1.13.0/AYA-1.13.0-win-x64.exe#/dl.7z",
+            "hash": "c79c376611548adec78134bca07ed0c7c4dbb5a386d7107ef57692422869b35c",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "AYA.exe",
+            "AYA",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "persist": "User Data",
+    "checkver": {
+        "github": "https://github.com/liriliri/aya"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/liriliri/aya/releases/download/v$version/AYA-$version-win-x64.exe#/dl.7z"
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "version": "1.2.0.8",
+    "description": "Whispering Tiger UI is a Native-UI that can be used to control the Whispering Tiger application.",
+    "homepage": "https://github.com/Sharrnah/whispering-ui",
+    "license": "MIT",
+    "url": "https://github.com/Sharrnah/whispering-ui/releases/download/v1.2.0.8/whispering-tiger-ui-1.2.0.8.zip",
+    "hash": "00104872090a95e198a08f826478da1f13c19e6a666d2d02b9f915aaf6b104cd",
+    "bin": "Whispering Tiger.exe", // need to download lots of other stuff
+    "shortcuts": [
+        [
+            "Whispering Tiger.exe",
+            "Whispering Tiger"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Sharrnah/whispering-ui/releases/download/v$version/whispering-tiger-ui-$version.zip"
+    }
+}

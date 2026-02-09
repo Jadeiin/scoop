@@ -1,0 +1,29 @@
+{
+    "version": "7.11.0",
+    "description": "Whispering is an open-source speech-to-text application. Press a keyboard shortcut, speak, and your words will transcribe, transform, then copy and paste at the cursor.",
+    "homepage": "https://github.com/EpicenterHQ/epicenter/tree/main/apps/whispering",
+    "license": "AGPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/EpicenterHQ/epicenter/releases/download/v7.11.0/Whispering_7.11.0_x64-setup.exe#/dl.7z",
+            "hash": "1908e992a069e372e8eee8e098b4c45098ff041759fab306cd0627c70cc222eb",
+            "pre_install": "Remove-Item \"$dir\\`$*\" -Recurse"
+        }
+    },
+    "shortcuts": [
+        [
+            "Whispering.exe",
+            "Whispering"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/EpicenterHQ/epicenter"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/EpicenterHQ/epicenter/releases/download/v$version/Whispering_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}

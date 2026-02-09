@@ -1,0 +1,38 @@
+{
+    "version": "1.2.5",
+    "description": "a cool and simple visualising tool to analyse your drone flights.",
+    "homepage": "https://www.tilak.io/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tilak-io/tiplot/releases/download/v1.2.5/tiplot-Setup-1.2.5.exe#/dl.7z",
+            "hash": "sha512:a5148412b037ccc74b2126f4f738defc2b6fad638a60229dcb8401648e0ed49eee3d85803147b3b331326775e9f6c074f76cb395f6f4bada8ece539e6534a298",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\" -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "tiplot.exe",
+            "TiPlot",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "persist": "User Data",
+    "checkver": {
+        "github": "https://github.com/tilak-io/tiplot"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tilak-io/tiplot/releases/download/v$version/tiplot-Setup-$version.exe#/dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "regex": "sha512:\\s+$base64"
+                }
+            }
+        }
+    }
+}

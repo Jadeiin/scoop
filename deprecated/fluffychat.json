@@ -1,0 +1,23 @@
+{
+    "version": "1.12.1",
+    "description": "FluffyChat is an open source, nonprofit and cute [matrix] client written in Flutter.",
+    "homepage": "https://fluffychat.im",
+    "license": "AGPL-3.0-or-later",
+    "url": "https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/1.12.1/fluffychat-windows.zip",
+    "hash": "missing",
+    "bin": "fluffychat.exe",
+    "shortcuts": [
+        [
+            "fluffychat.exe",
+            "FluffyChat"
+        ]
+    ],
+    "checkver": {
+        "url": "https://gitlab.com/api/v4/projects/16112282/releases/permalink/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "(?:v|V)?([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://gitlab.com/api/v4/projects/16112282/packages/generic/fluffychat/$version/fluffychat-windows.zip"
+    }
+}

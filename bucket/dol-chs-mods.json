@@ -1,0 +1,21 @@
+{
+    "version": "0.4.7.5-alpha2.0.2-0524",
+    "description": "Degrees of Lewdity 整合",
+    "homepage": "https://dol-lyra.github.io/hub/",
+    "license": "CC-BY-NC-SA-4.0",
+    "url": "https://github.com/sakarie9/DOL-CHS-MODS/releases/download/v0.4.7.5-alpha2.0.2-0524/DoL-0.4.7.5-Lyra-a2.0.2-besc-csd-0524.zip",
+    "hash": "33888e8cd88dc8e093d03d9d9e33087f8d81b76beaf286261daae2deb72e46e4",
+    "shortcuts": [
+        [
+            "Degrees of Lewdity.html",
+            "Degrees of Lewdity 整合"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/sakarie9/DoL-Lyra",
+        "regex": "/releases/tag/v((?<origin>[\\d.]+)-alpha(?<chsmods>.+)-(?<date>[\\d.]+))"
+    },
+    "autoupdate": {
+        "url": "https://github.com/sakarie9/DOL-CHS-MODS/releases/download/v$version/DoL-$matchOrigin-Lyra-a$matchChsmods-besc-csd-$matchDate.zip"
+    }
+}

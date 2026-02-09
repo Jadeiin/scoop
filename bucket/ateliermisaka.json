@@ -1,0 +1,37 @@
+{
+    "version": "1.6.7.0",
+    "description": "To show and download content on Fanbox or Fantia or Patreon.",
+    "homepage": "https://github.com/EndlessMISAKA/AtelierMisaka",
+    "license": "MIT",
+    "notes": ".NET Framework 4.7.1 is required.",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "url": "https://github.com/EndlessMISAKA/AtelierMisaka/releases/download/V1.6.7.0/AtelierMisaka_V1.6.7.0.zip",
+    "hash": "3f38464752542a0a18f2da6cc42747ab2c19a20833b97d261d9955fcb3c1592d",
+    "shortcuts": [
+        [
+            "AtelierMisaka.exe",
+            "AtelierMisaka"
+        ],
+        [
+            "AtelierMisaka_FileManager.exe",
+            "AtelierMisaka FileManager"
+        ]
+    ],
+    "persist": [
+        "ChromiumCache",
+        // "Data.db",
+        "Fanbox",
+        "Fantia",
+        // "Lang.ini",
+        "Patreon",
+        "Settings",
+        // "error.log",
+        // "error_download.log"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/EndlessMISAKA/AtelierMisaka/releases/download/V$version/AtelierMisaka_V$version.zip"
+    }
+}

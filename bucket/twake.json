@@ -1,0 +1,29 @@
+{
+    "version": "2.6.7",
+    "description": "Twake Chat is an open source, decentralized chat app based on the Matrix protocol.",
+    "homepage": "https://twake-chat.com/",
+    "license": "AGPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linagora/twake-on-matrix/releases/download/v2.6.7/twake-v2.6.7-windows-amd64.exe",
+            "hash": "c2fec2e8fe1d215efd2da49e3c57a2f2153f2b9220e1140c5a7973db7e0bdaee"
+        }
+    },
+    "shortcuts": [
+        [
+            "fluffychat.exe", ???
+            "Twake Chat"
+        ]
+    ],
+    "innosetup": true,
+    "checkver": {
+        "github": "https://github.com/linagora/twake-on-matrix"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/linagora/twake-on-matrix/releases/download/v$version/twake-v$version-windows-amd64.exe"
+            }
+        }
+    }
+}

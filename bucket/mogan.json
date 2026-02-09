@@ -5,38 +5,27 @@
     "license": "GPL-3.0-or-later",
     "url": "https://github.com/XmacsLabs/mogan/releases/download/v1.2.9.7/MoganResearch-v1.2.9.7-64bit-portable.zip",
     "hash": "c51a9c0f801f23e1ba886f7133277aefc213932b8495abb17168a6ff4604dc36",
-    "bin": "bin\\MoganResearch.exe",
-    "shortcuts": [
-        [
-            "bin\\MoganResearch.exe",
-            "Mogan Research"
-        ]
+    "notes": [
+        "Data is stored in $persist_dir\\data",
+        "delete them manually if you want to purge the data"
     ],
     "post_install": [
-        "Write-Host 'Registering the TM(U) FileType...'",
-        "New-Item 'HKCU:\\SOFTWARE\\Classes\\.tm' -Value \"tmfile\" -Force | Out-Null",
-        "New-Item 'HKCU:\\SOFTWARE\\Classes\\.tmu' -Value \"tmfile\" -Force | Out-Null",
-        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile' -Value \"text/tm\" -Force | Out-Null",
-        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile\\DefaultIcon' -Value \"$dir\\bin\\MoganResearch.exe\" -Force | Out-Null",
-        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile\\shell\\open\\command' -Value \"\"\"$dir\\bin\\MoganResearch.exe\"\" \"\"%1\"\"\" -Force | Out-Null",
-        "Write-Host 'Done!'"
+        "Start-Process \"$dir\\setup.exe\" -Wait -Verb 'RunAs' -WindowStyle 'Hidden' -ArgumentList @('in', '-c', '--am', '--al', '-t', \"$dir\")",
+        "Remove-Item \"$dir\\setup.exe\"",
+        "ensure \"$persist_dir\\data\" | Out-Null"
     ],
     "pre_uninstall": [
-        "Write-Host 'Unregistering the TM(U) FileType...'",
-        "Remove-Item 'HKCU:\\SOFTWARE\\Classes\\.tm' -Force -Recurse",
-        "Remove-Item 'HKCU:\\SOFTWARE\\Classes\\.tmu' -Force -Recurse",
-        "Remove-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile' -Force -Recurse",
-        "Write-Host 'Done!'"
+        "Start-Process \"$dir\\maintenancetool.exe\" -Wait -Verb 'RunAs' -WindowStyle 'Hidden' -ArgumentList @('pr', '-c', '--am', '--al')"
     ],
     "env_set": {
         "TEXMACS_HOME_PATH": "$persist_dir\\data"
     },
-    "persist": "data",
     "checkver": {
-        "github": "https://github.com/XmacsLabs/mogan"
+        "github": "https://github.com/XmacsLabs/mogan",
+        "regex": "/releases/tag/(v?[\\d.]+)\""
     },
     "autoupdate": {
-        "url": "https://github.com/XmacsLabs/mogan/releases/download/v$version/MoganResearch-v$version-64bit-portable.zip",
+        "url": "https://github.com/XmacsLabs/mogan/releases/download/$version/MoganSTEM-$version-64bit-installer.exe",
         "hash": {
             "url": "https://mogan.app/guide/Install.html"
         }

@@ -1,0 +1,22 @@
+{
+    "version": "1",
+    "description": "基于 node&typescript 重写知乎助手",
+    "homepage": "https://www.yaozeyuan.online/zhihuhelp/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "1",
+            "hash": "1"
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/YaoZeyuan/zhihuhelp" // tag name is bull shit
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/YaoZeyuan/zhihuhelp/releases/download/mac-2.4.1/windows-zhihuhelp-win64-2.4.1.exe"
+            }
+        }
+    }
+}
