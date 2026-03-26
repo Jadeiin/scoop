@@ -1,12 +1,12 @@
 {
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "frp跨平台桌面客户端，可视化配置，轻松实现内网穿透！ 支持所有frp版本",
     "homepage": "https://jwinks.com/p/frp/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/luckjiawei/frpc-desktop/releases/download/v1.2.4/Frpc-Desktop-Setup-1.2.4.exe#/dl.7z",
-            "hash": "sha512:a4eeec9a1c59ad8ae77dc66df6c23d4c145ccd8803f0b90bf9d9391540380ba40b2f49b579013c5d38d089ee66bdd09c9de7cc0d578e396105253c51ca34892d",
+            "url": "https://github.com/luckjiawei/frpc-desktop/releases/download/v1.2.5/Frpc-Desktop-Setup-1.2.5.exe#/dl.7z",
+            "hash": "sha512:47791f3827ca9368909e042f6ce4fdacbf9582275da3ca22ea58d2afa817475331c7ccf6344e7f205aba34a8146089180ab657d777da35451ae88ff7603a4926",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
