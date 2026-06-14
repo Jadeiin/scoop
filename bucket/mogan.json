@@ -1,15 +1,16 @@
 {
-    "version": "1.2.9.7",
-    "description": "Mogan (based on GNU TeXmacs): Let us enjoy exploring science and technology!",
+    "version": "2026.2.5",
+    "description": "Mogan STEM: A professional scientific writing platform for mathematics, physics, statistics, and computer science. Deeply optimized from GNU TeXmacs.",
     "homepage": "https://mogan.app",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/MoganLab/mogan/releases/download/v1.2.9.7/MoganResearch-v1.2.9.7-64bit-portable.zip",
-    "hash": "c51a9c0f801f23e1ba886f7133277aefc213932b8495abb17168a6ff4604dc36",
-    "bin": "bin\\MoganResearch.exe",
+    "url": "https://github.com/MoganLab/mogan/releases/download/v2026.2.5/MoganSTEM-v2026.2.5-64bit-installer.exe",
+    "hash": "b4be065ab822694ba58f5382c8f8fe5a0fb0bf68c56535b2f9f99b51d939ad2b",
+    "extract_dir": "MoganLab\\MoganSTEM-2026.2.5",
+    "bin": "bin\\MoganSTEM.exe",
     "shortcuts": [
         [
-            "bin\\MoganResearch.exe",
-            "Mogan Research"
+            "bin\\MoganSTEM.exe",
+            "Mogan STEM"
         ]
     ],
     "post_install": [
@@ -17,8 +18,8 @@
         "New-Item 'HKCU:\\SOFTWARE\\Classes\\.tm' -Value \"tmfile\" -Force | Out-Null",
         "New-Item 'HKCU:\\SOFTWARE\\Classes\\.tmu' -Value \"tmfile\" -Force | Out-Null",
         "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile' -Value \"text/tm\" -Force | Out-Null",
-        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile\\DefaultIcon' -Value \"$dir\\bin\\MoganResearch.exe\" -Force | Out-Null",
-        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile\\shell\\open\\command' -Value \"\"\"$dir\\bin\\MoganResearch.exe\"\" \"\"%1\"\"\" -Force | Out-Null",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile\\DefaultIcon' -Value \"$dir\\bin\\MoganSTEM.exe\" -Force | Out-Null",
+        "New-Item 'HKCU:\\SOFTWARE\\Classes\\tmfile\\shell\\open\\command' -Value \"\"\"$dir\\bin\\MoganSTEM.exe\"\" \"\"%1\"\"\" -Force | Out-Null",
         "Write-Host 'Done!'"
     ],
     "pre_uninstall": [
@@ -36,9 +37,7 @@
         "github": "https://github.com/MoganLab/mogan"
     },
     "autoupdate": {
-        "url": "https://github.com/MoganLab/mogan/releases/download/v$version/MoganResearch-v$version-64bit-portable.zip",
-        "hash": {
-            "url": "https://mogan.app/guide/Install.html"
-        }
+        "url": "https://github.com/MoganLab/mogan/releases/download/v$version/MoganSTEM-v$version-64bit-installer.exe",
+        "extract_dir": "MoganLab\\MoganSTEM-$version"
     }
 }
