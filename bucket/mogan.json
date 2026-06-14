@@ -3,12 +3,11 @@
     "description": "Mogan STEM: A professional scientific writing platform for mathematics, physics, statistics, and computer science. Deeply optimized from GNU TeXmacs.",
     "homepage": "https://mogan.app",
     "license": "GPL-3.0-or-later",
-    "url": "https://github.com/MoganLab/mogan/releases/download/v2026.2.5/MoganSTEM-v2026.2.5-64bit-installer.exe",
+    "url": "https://github.com/MoganLab/mogan/releases/download/v2026.2.5/MoganSTEM-v2026.2.5-64bit-installer.exe#/dl.7z",
     "hash": "b4be065ab822694ba58f5382c8f8fe5a0fb0bf68c56535b2f9f99b51d939ad2b",
-    "installer": {
-        "file": "MoganSTEM-v2026.2.5-64bit-installer.exe"
-    },
-    "extract_dir": "MoganLab\\MoganSTEM-2026.2.5",
+    "pre_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
+    ],
     "bin": "bin\\MoganSTEM.exe",
     "shortcuts": [
         [
@@ -40,10 +39,6 @@
         "github": "https://github.com/MoganLab/mogan"
     },
     "autoupdate": {
-        "url": "https://github.com/MoganLab/mogan/releases/download/v$version/MoganSTEM-v$version-64bit-installer.exe",
-        "installer": {
-            "file": "MoganSTEM-v$version-64bit-installer.exe"
-        },
-        "extract_dir": "MoganLab\\MoganSTEM-$version"
+        "url": "https://github.com/MoganLab/mogan/releases/download/v$version/MoganSTEM-v$version-64bit-installer.exe#/dl.7z"
     }
 }
