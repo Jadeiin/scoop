@@ -22,7 +22,7 @@
     "checkver": {
         "url": "https://github.com/NVIDIA/TensorRT",
         "regex": "TensorRT v(?<head>10\\.13\\.0)\\.(?<patch>\\d+)",
-        "replace": "$head.$patch"
+        "replace": "${head}.${patch}"
     },
     "autoupdate": {
         "architecture": {
