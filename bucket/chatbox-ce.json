@@ -13,7 +13,8 @@
     "shortcuts": [
         [
             "Chatbox.exe",
-            "Chatbox"
+            "Chatbox",
+            "--user-data-dir=\"$dir\\data\""
         ]
     ],
     "persist": "data",
