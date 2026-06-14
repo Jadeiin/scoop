@@ -21,8 +21,8 @@
     "env_add_path": "lib",
     "checkver": {
         "url": "https://github.com/NVIDIA/TensorRT",
-        "regex": "TensorRT v(?<head>11\\.\\d+\\.\\d+)\\.(?<patch>\\d+)",
-        "replace": "${head}.${patch}"
+        "regex": "TensorRT v(?<verhead>11\\.\\d+\\.\\d+)\\.(?<verpatch>\\d+)",
+        "replace": "${verhead}.${verpatch}"
     },
     "autoupdate": {
         "architecture": {

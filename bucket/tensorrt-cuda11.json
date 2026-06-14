@@ -21,8 +21,8 @@
     "env_add_path": "lib",
     "checkver": {
         "url": "https://github.com/NVIDIA/TensorRT/blob/release/10.13/README.md",
-        "regex": "TensorRT v(?<head>10\\.13\\.0)\\.(?<patch>\\d+)",
-        "replace": "${head}.${patch}"
+        "regex": "TensorRT v(?<verhead>10\\.13\\.0)\\.(?<verpatch>\\d+)",
+        "replace": "${verhead}.${verpatch}"
     },
     "autoupdate": {
         "architecture": {
