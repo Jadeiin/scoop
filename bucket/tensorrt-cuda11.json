@@ -20,7 +20,7 @@
     "extract_dir": "TensorRT-10.13.0.35",
     "env_add_path": "lib",
     "checkver": {
-        "url": "https://github.com/NVIDIA/TensorRT",
+        "url": "https://github.com/NVIDIA/TensorRT/blob/release/10.13/README.md",
         "regex": "TensorRT v(?<head>10\\.13\\.0)\\.(?<patch>\\d+)",
         "replace": "${head}.${patch}"
     },
