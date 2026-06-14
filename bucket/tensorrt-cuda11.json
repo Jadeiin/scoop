@@ -6,7 +6,7 @@
         "identifier": "Freeware",
         "url": "https://docs.nvidia.com/deeplearning/tensorrt/sla/"
     },
-    "notes": "This package is only for CUDA 11.x.",
+    "notes": "This package is only for CUDA 11.x. TensorRT 11.0 and later no longer ship a CUDA 11.8 build.",
     "suggest": {
         "cuda": "versions/cuda11.8"
     },
@@ -21,7 +21,8 @@
     "env_add_path": "lib",
     "checkver": {
         "url": "https://github.com/NVIDIA/TensorRT",
-        "regex": "TensorRT v([\\d.]+)"
+        "regex": "TensorRT v(?<head>10\\.13\\.0)\\.(?<patch>\\d+)",
+        "replace": "$head.$patch"
     },
     "autoupdate": {
         "architecture": {
