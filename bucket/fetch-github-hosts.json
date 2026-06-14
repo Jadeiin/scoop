@@ -9,6 +9,7 @@
             "hash": "a02c696404afe3c683ea8cd3654967c7888197fac2fa14afb00c8aae2a92a1f6"
         }
     },
+    "extract_dir": "Fetch Github Hosts",
     "pre_install": [
         "$manifest.persist | ForEach-Object {",
         "    if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null }",
