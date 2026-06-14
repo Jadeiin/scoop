@@ -5,9 +5,7 @@
     "license": "GPL-3.0-or-later",
     "url": "https://github.com/squidowl/halloy/releases/download/2026.7.2/halloy-installer.exe",
     "hash": "f74342417154ff21df3e40168cc548374a9c38a5cf558637991f52154c21fb25",
-    "installer": {
-        "file": "halloy-installer.exe"
-    },
+    "innosetup": true,
     "bin": "halloy.exe",
     "shortcuts": [
         [
