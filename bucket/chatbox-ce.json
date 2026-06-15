@@ -14,10 +14,10 @@
         [
             "Chatbox.exe",
             "Chatbox",
-            "--user-data-dir=\"$dir\\data\""
+            "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
-    "persist": "data",
+    "persist": "User Data",
     "checkver": {
         "url": "https://download.chatboxai.app/releases/latest.yml",
         "regex": "version:\\s(?<version>[\\d.]+)"
