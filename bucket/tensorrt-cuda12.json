@@ -6,7 +6,7 @@
         "identifier": "Freeware",
         "url": "https://docs.nvidia.com/deeplearning/tensorrt/sla/"
     },
-    "notes": "This package is only for CUDA 12.x or CUDA 13.x.",
+    "notes": "This package is only for CUDA 12.x.",
     "suggest": {
         "cuda": "cuda"
     },
@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/$matchHead/zip/TensorRT-Enterprise-$version-Windows-amd64-cuda-12.9-Release-external.zip"
+                "url": "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/$matchVerhead/zip/TensorRT-Enterprise-$version-Windows-amd64-cuda-12.9-Release-external.zip"
             }
         },
         "extract_dir": "TensorRT-$version"

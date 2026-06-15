@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/$matchHead/zip/TensorRT-Enterprise-$version-Windows-amd64-cuda-13.2-Release-external.zip"
+                "url": "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/$matchVerhead/zip/TensorRT-Enterprise-$version-Windows-amd64-cuda-13.2-Release-external.zip"
             }
         },
         "extract_dir": "TensorRT-$version"
