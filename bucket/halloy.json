@@ -1,24 +1,21 @@
 {
-    "version": "2026.7.1",
+    "version": "2026.7.2",
     "description": "IRC application written in Rust",
     "homepage": "https://halloy.squidowl.org/",
     "license": "GPL-3.0-or-later",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/squidowl/halloy/releases/download/2026.7.1/halloy-installer.msi",
-            "hash": "dcc3d18abf39d26ee6c97a661e4103c65c401a2f5e162aa4fd8028c4a5f0ad34"
-        }
-    },
-    "extract_dir": "PFiles64/Halloy",
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\config.toml\")) { New-Item \"$dir\\config.toml\" -ItemType File | Out-Null }",
-        "if (!(Test-Path \"$persist_dir\\dashboard.json.gz\")) { New-Item \"$dir\\dashboard.json.gz\" -ItemType File | Out-Null }"
-    ],
+    "url": "https://github.com/squidowl/halloy/releases/download/2026.7.2/halloy-installer.exe",
+    "hash": "f74342417154ff21df3e40168cc548374a9c38a5cf558637991f52154c21fb25",
+    "innosetup": true,
+    "bin": "halloy.exe",
     "shortcuts": [
         [
             "halloy.exe",
             "Halloy"
         ]
+    ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config.toml\")) { New-Item \"$dir\\config.toml\" -ItemType File | Out-Null }",
+        "if (!(Test-Path \"$persist_dir\\dashboard.json.gz\")) { New-Item \"$dir\\dashboard.json.gz\" -ItemType File | Out-Null }"
     ],
     "persist": [
         "themes",
@@ -30,13 +27,6 @@
         "github": "https://github.com/squidowl/halloy"
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/squidowl/halloy/releases/download/$version/halloy-installer.msi"
-            }
-        },
-        "hash": {
-            "url": "$baseurl/checksums.txt"
-        }
+        "url": "https://github.com/squidowl/halloy/releases/download/$version/halloy-installer.exe"
     }
 }

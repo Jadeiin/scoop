@@ -6,14 +6,14 @@
         "identifier": "Freeware",
         "url": "https://docs.nvidia.com/deeplearning/tensorrt/sla/"
     },
-    "notes": "This package is only for CUDA 12.x.",
+    "notes": "This package is only for CUDA 13.x.",
     "suggest": {
         "cuda": "cuda"
     },
     "architecture": {
         "64bit": {
-            "url": "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/11.0.0/zip/TensorRT-Enterprise-11.0.0.114-Windows-amd64-cuda-12.9-Release-external.zip",
-            "hash": "ae2b04476d79e6eb352056e7ef1c8df20c13d7dda0ca40e14a2f3b20636284a1"
+            "url": "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/11.0.0/zip/TensorRT-Enterprise-11.0.0.114-Windows-amd64-cuda-13.2-Release-external.zip",
+            "hash": "3136ce4a4e9e8f5317a1740c2dddc3a4574df138f16ea19c12476a944e0c2478"
         }
     },
     "bin": "bin\\trtexec.exe",
@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/$matchVerhead/zip/TensorRT-Enterprise-$version-Windows-amd64-cuda-12.9-Release-external.zip"
+                "url": "https://developer.nvidia.com/downloads/compute/machine-learning/tensorrt/$matchVerhead/zip/TensorRT-Enterprise-$version-Windows-amd64-cuda-13.2-Release-external.zip"
             }
         },
         "extract_dir": "TensorRT-$version"
