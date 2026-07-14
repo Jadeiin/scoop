@@ -1,10 +1,10 @@
 {
-    "version": "3253",
+    "version": "3255",
     "description": "Free Form Data Organizer",
     "homepage": "https://strlen.com/treesheets/",
     "license": "Zlib",
-    "url": "https://github.com/aardappel/treesheets/releases/download/3253/TreeSheets-3253-winx64.zip",
-    "hash": "6ebcec6f59b28a6b08988e39352a132cace835d9658a9edef347492faa680db4",
+    "url": "https://github.com/aardappel/treesheets/releases/download/3255/TreeSheets-3255-winx64.zip",
+    "hash": "ed966b759f8a5af678541ff6070c222ab5618894a67218327d48dbcbb31cc57a",
     "extract_dir": "TS",
     "pre_install": [
         "ensure \"$persist_dir\" | Out-Null",
