@@ -1,12 +1,12 @@
 {
-    "version": "4.0.3",
+    "version": "4.1.0",
     "description": "🌏 同步 github 的 hosts 工具，支持多平台的图形化和命令行，内置客户端和服务端两种模式~",
     "homepage": "https://hosts.gitcdn.top",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Licoy/fetch-github-hosts/releases/download/v4.0.3/Fetch.Github.Hosts_4.0.3_x64_en-US.msi",
-            "hash": "a02c696404afe3c683ea8cd3654967c7888197fac2fa14afb00c8aae2a92a1f6"
+            "url": "https://github.com/Licoy/fetch-github-hosts/releases/download/v4.1.0/Fetch.Github.Hosts_4.1.0_x64_en-US.msi",
+            "hash": "f65593a6e7699501ea07cef0e76c774875632e10a6a38dbb1de9902c9d20abf1"
         }
     },
     "extract_dir": "PFiles\\Fetch Github Hosts",
