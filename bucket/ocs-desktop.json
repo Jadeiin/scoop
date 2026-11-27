@@ -1,12 +1,12 @@
 {
-    "version": "3.10.0",
+    "version": "3.11.1",
     "description": "OCS 浏览器自动化神器，一键浏览器多开，用户脚本环境一键配置。",
     "homepage": "https://docs.ocsjs.com/docs/app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ocsjs/ocs-desktop/releases/download/v3.10.0/ocs-3.10.0-setup-win-x64.exe#/dl.7z",
-            "hash": "8ad53cbe0ff023afc51093ed0cca954b2a18df45e8d0b971d139dad3bb763263",
+            "url": "https://github.com/ocsjs/ocs-desktop/releases/download/v3.11.1/ocs-3.11.1-setup-win-x64.exe#/dl.7z",
+            "hash": "32a0021a92c105ece3bb9c59449825bc4ac44cc3dde784b0fdd0dde10231142b",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
